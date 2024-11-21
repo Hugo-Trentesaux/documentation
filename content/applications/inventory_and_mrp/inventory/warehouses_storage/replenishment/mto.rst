@@ -14,6 +14,7 @@ Replenish on order (MTO)
 a draft order for a product every time it is required to fulfill a sales order (SO), or when it is
 needed as a component in a manufacturing order (MO).
 
+<<<<<<< 17.0
 For products that are purchased from a vendor, a request for quotation (RFQ) is created to replenish
 the product, while an |MO| is created for products that are manufactured. The creation of an |RFQ|
 or |MO| occurs every time an |SO| or |MO| that requires the product is confirmed, regardless of the
@@ -30,6 +31,15 @@ current stock level of the product being ordered.
 
 Unarchive MTO route
 ===================
+||||||| 498280b9325df390595398b5d9c0293611019c20
+Unarchive the Replenish on Order (MTO) route
+============================================
+=======
+.. _inventory/warehouse_storage/mto-route:
+
+Unarchive the Replenish on Order (MTO) route
+============================================
+>>>>>>> 5b3604fc1855c86fed89e2139bd52c10de7f0c50
 
 By default, Odoo sets the |MTO| route as *archived*. This is because |MTO| is a somewhat niche
 workflow that is only used by certain companies. However, it is easy to unarchive the route in just

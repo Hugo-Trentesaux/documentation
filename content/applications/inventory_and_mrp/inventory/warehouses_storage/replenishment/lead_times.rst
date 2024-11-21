@@ -2,14 +2,18 @@
 Lead times
 ==========
 
+<<<<<<< 17.0
 .. |MOs| replace:: :abbr:`MOs (Manufacturing Orders)`
 .. |BoM| replace:: :abbr:`BoM (Bill of Materials)`
 .. |BoMs| replace:: :abbr:`BoMs (Bills of Materials)`
+||||||| 498280b9325df390595398b5d9c0293611019c20
+=======
+>>>>>>> 5b3604fc1855c86fed89e2139bd52c10de7f0c50
 .. |RFQ| replace:: :abbr:`RFQ (Request for Quotation)`
 
 Accurately forecasting delivery dates is vital for fulfilling customer expectations. In Odoo, the
-*Inventory* app allows for comprehensive lead time configuration, allowing coordination and planning
-of manufacturing orders, deliveries, and receptions.
+**Inventory** app allows for comprehensive lead time configuration, allowing coordination and planning
+of manufacturing orders, deliveries, and receipts.
 
 Lead time types
 ===============
@@ -42,11 +46,21 @@ process. Here's a summary of the types of lead times in Odoo:
   products that are set to replenish to order, the need appears on the *Replenishment report*
   earlier, according to the specified number of days.
 
+<<<<<<< 17.0
 - :ref:`Days to Purchase <inventory/shipping_receiving/days-to-purchase>`: days needed for the
   vendor to receive a request for quotation (RFQ) and confirm it. It advances the deadline to
   schedule a |RFQ| by a specified number of days.
 
 - :ref:`Manufacturing lead time <inventory/shipping_receiving/manuf-lt>`: number of days needed to
+||||||| 498280b9325df390595398b5d9c0293611019c20
+- :ref:`Manufacturing lead time <inventory/management/manuf-lt>`: the number of days needed to
+=======
+- :ref:`Days to Purchase lead time <inventory/warehouses_storage/days-to-purchase>`: days needed for
+  the vendor to receive a request for quotation (RFQ) and confirm it. It advances the deadline to
+  schedule a |RFQ| by a specified number of days.
+
+- :ref:`Manufacturing lead time <inventory/management/manuf-lt>`: the number of days needed to
+>>>>>>> 5b3604fc1855c86fed89e2139bd52c10de7f0c50
   complete a manufacturing order (MO) from the date of confirmation. This lead time includes
   weekends (non-working hours in Odoo), and is used to forecast an approximate production date for a
   finished good.
@@ -243,6 +257,7 @@ set to account for potential delays in supplier deliveries. Then, click :guilabe
       :align: center
       :alt: Set security lead time for purchase from the Inventory > Configuration > Settings.
 
+<<<<<<< 17.0
 .. _inventory/shipping_receiving/days-to-purchase:
 
 Days to purchase
@@ -258,6 +273,20 @@ receiving it from the company.
    :alt: Show "Days to Purchase" configuration in the Settings page.
 
 .. _inventory/shipping_receiving/manuf-lt:
+||||||| 498280b9325df390595398b5d9c0293611019c20
+.. _inventory/management/manuf-lt:
+=======
+.. _inventory/warehouses_storage/days-to-purchase:
+
+Days to purchase lead time
+--------------------------
+
+To set it up, go to :menuselection:`Inventory app --> Configuration --> Settings`. Under the
+:guilabel:`Advanced Scheduling` section, in the :guilabel:`Days to Purchase` field, specify the
+number of days required for the vendor to confirm a |RFQ| after receiving it from the company.
+
+.. _inventory/management/manuf-lt:
+>>>>>>> 5b3604fc1855c86fed89e2139bd52c10de7f0c50
 
 Manufacturing lead times
 ========================
