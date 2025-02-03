@@ -4,6 +4,12 @@
 Changelog
 =========
 
+Odoo Online version 18.2
+========================
+
+- `@api.private` distinguished public python methods from methods exposed for RPC calls.
+  See `#195402 <https://github.com/odoo/odoo/pull/195402>`_.
+
 Odoo Online version 18.1
 ========================
 
